@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fitness Club</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body{
+    	color: white;
+        margin: 50px;
+        padding: 50px;
+        background: url('img/gym.jpg');
+    }
+    .left{
+    	position: absolute;
+    	left: 30px;
+    	top: 0px;
+    	display: inline-block;
+    	border: 5px solid red;
+    }
+    .mid{
+    	display: block;
+    	top: 0px;
+    	width: 40%;
+    	margin: 20px auto;
+    	border: 5px solid yellow;
+    }
+    .right{
+    	position: absolute;
+    	right: 30px;
+    	width: 20%;
+    	top: 0px;
+    	display: inline-block;
+    	border: 5px solid green;
+    }
+    .navbar{
+    	display: inline-block;
+    }
+    .navbar li{
+    	display: inline-block;
+    	font-size: 25px;
+    }
+    .navbar li a{
+    	color: white;
+    	text-decoration: none;
+    	padding: 25px 15px;
+    }
+</style>
+<body>
+	<header class="header">
+		<div class="left">
+			<img src="img/fit.png" width="220" height="120">	
+		</div>
+		<div class="mid">
+			<ul class="navbar">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Fitness Club</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+		<div class="right">
+			<pre style="color: white; font-size: 20px">
+			<center>DON'T STOP</center>
+			<center>WHEN YOU'RE TIRED</center>
+			   <center>STOP</center>
+			<center>WHEN YOU'RE</center>
+			   <center>DONE</center>
+			</pre>
+		</div>
+	</header>
+	<div class="container">
+            <div class="header">
+                <h1 style="color: skyblue">****REGISTRATION FORM*****</h1>
+            </div>
+            <form>
+                <div>
+                    <lable>NAME:</lable>
+                    <input type="text" name="username" placeholder="enter your name" required>
+                </div><br>
+                <div>
+                    <lable>EMAIL ID:</lable>
+                    <input type="email" name="email" placeholder="enter your email id" required>
+                </div><br>
+                <div>
+                    <lable>GENDER:</lable>
+                    <input type="radio" name="gender">MALE
+                    <input type="radio" name="gender">FEMALE
+                </div><br>
+                <div>
+                    <lable>MOBILE NUMBER:</lable>
+                    <select>
+                        <option>+91</option>
+                        <option>+92</option>
+                        <option>+93</option>
+                        <option>+94</option>
+                        <option>+95</option>
+                        <option>+96</option>
+                        <option>+97</option>
+                        <option>+98</option>
+                        <option>+99</option>
+                    </select>
+                    <input type="phoneCode" length="10" name="phonenumber" required>
+                </div><br>
+                <div>
+                    <lable>VARIFICATION ID</lable>
+                    <input type="file" name="varification" placeholder="file" required>
+                </div><br>
+                <div>
+                    <lable>STARTING DATE</lable>
+                    <input type="date" name=" starting_date" placeholder="starting date">
+                </div>
+                <div>
+                    <lable>ENDING DATE</lable>
+                    <input type="date" name="ending_date" placeholder="ending date">
+                </div>
+                <div>
+               		<lable>SUBMIT</lable>
+                    	<input type="button" name="submit" placeholder="SUBMIT">
+              
+                </div><br>
+
+            </form>
+        </div>
+</body>
+
+</html>
